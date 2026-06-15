@@ -36,6 +36,38 @@ tw-link {
 body, tw-story {
   background: linear-gradient(to bottom, #82B1FF, #1976D2) !important;
   background-attachment: fixed !important;
+}
+
+/* --- ADAPTAÇÃO PARA TELEMÓVEL (Não estraga o computador) --- */
+@media screen and (max-width: 768px) {
+  
+  /* Ajusta a caixa principal do jogo para não cortar nas bordas */
+  #story {
+    margin: 5% 4% !important;
+    padding: 15px !important;
+    width: auto !important;
+  }
+
+  /* Ajusta o tamanho do texto para ser legível no telemóvel */
+  .passage {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Garante que todos os vídeos e imagens encolhem para caber no ecrã */
+  video, img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Ajusta os botões/links de escolha para serem fáceis de clicar com o dedo */
+  a.link-internal {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    text-align: center;
+  }
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="INÍCIO" tags="" position="575,225" size="100,100">&lt;h1 style=&quot;text-align: center; color: #0D47A1; font-size: 2.2em; line-height: 1.0; margin-bottom: 30px; font-weight: 700;&quot;&gt;
 A FESTA DA NOSSA&lt;br&gt;SENHORA DA PIEDADE
 &lt;/h1&gt;
